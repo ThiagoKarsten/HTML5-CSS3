@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audios em HTML5</title>
+</head>
+
+<body>
+    <h1>Reproduzindo Áudio</h1>
+    <p>vamos aprender a reproduzir áudios em HTML5</p>
+    <audio src="midia/dove-love-mp3.mp3" controls autoplay></audio>
+    <!-- Utilizamos a tag audio para adiconar um audio e colocamos controls para ter o controle 
+        do audios no nosso site e autoplay para ele tocar automaticamente o audio, 
+        formatos de audio: MP3, WAV, OGG -->
+    <audio preload="metadata" controls loop>
+        <source src="midia/guanacast-33.mp3" type="audio/mpeg">
+        <source src="midia/guanacast-33.ogg" type="audio/ogg">
+        <source src="midia/guanacast-33.wav" type="audio/wav">
+        <p>Infelizmente seu navegador não consegue reproduzir aúdio. <a href="midia/guanacast-33.mp3">Clique aqui para baixar o arquivo MP3</a></p>
+    </audio>
+    <!-- Utilizamos a tag "source src". Para audio mp3 utilizamos o "audio/mpeg".
+    A ordem é muito importante, ele vai carregar o source que esta em primeiro, 
+    depois vai tentar o outro e assim por diante, se ele não conseguir reproduzir 
+    nenhum dos audios ele vai mostrar a frase que você digitou-->
+    <!-- Colocamos o preload para poder carregar o audio e exite tres tipos, auto, 
+        metadata e none. O auto vai carregar tudo e se o seu audio for muito grande 
+        ele vai demorar para carregar, o metadata carrega o nome do arquivo como data 
+        duração etc.. e none não vai carregar nada -->
+    <!-- O loop é para repoduzir o audio novamente quando ele terminar -->
+    <!-- Evitar arquivo wav pois é um arquivo muito pesado -->
+</body>
+
+</html>

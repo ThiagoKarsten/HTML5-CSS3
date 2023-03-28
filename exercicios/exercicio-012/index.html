@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Midias em HTML5</title>
+</head>
+
+<body>
+    <h1><em>Imagens dinâmicas</em></h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes, como por exemplo:</p>
+    <ul>
+        <li>Celular</li>
+        <li>Tablet</li>
+        <li>Notbook</li>
+        <li>Computador</li>
+    </ul>
+    <p>Ou simplesmente mude o tamanho do seu navegador.</p>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="Imagem flexivel">
+    </picture>
+    <!-- Usando a tag picture podemos colocar imagens de varios formatos para 
+        determinados dispositivos. -->
+    <!-- Usando a tag img adicionamos uma imagem ao nosso site -->
+    <!-- Usando a tag source podemos colocar a imagem que queremos quando a 
+        aba fica menor ou maior, lembrando que o source precisa ser na ordem do 
+        menor pro maior, no media colocamos a max permissão para a 
+        imagem anterior pode ter no site, se for menor que isso ela muda 
+        para uma imagem menor, no srcset colocamos o nome da imagem conforme 
+        salvamos e no type colocamos o tipo da imagem, se ela é png, jpeg etc...  -->
+</body>
+
+</html>

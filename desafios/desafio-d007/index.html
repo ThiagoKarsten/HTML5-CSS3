@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="pt-br">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagem flexivel</title>
+</head>
+<body>
+    <h1>Imagem Flexível</h1>
+    <p>Você esta vendo a imagem completa ? Experimente ampliar o tamanho da sua janela para aproveitar a melhor experiência &#x1F525;</p>
+    <picture>
+        <source media="(max-width: 620px)" srcset="fotos/foto-pequena.png" type="image/png">
+        <source media="(max-width: 1020px)" srcset="fotos/foto-media.png" type="image/png">
+        <img src="fotos/foto-grande.png" alt="Kart">
+    </picture>
+</body>
+</html>

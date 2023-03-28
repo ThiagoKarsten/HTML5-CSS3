@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Fromatação de Textos</title>
+    <style>
+        
+        mark {
+            background-color: aqua;
+            
+        }
+    </style> <!-- utilizando o style aqui podemos definir um padrão de cor para todos os "Mark" que criarmos -->
+</head>
+
+<body>
+    <h1>Principais formatações</h1>
+    <h2><em>Negrito / Destaque</em></h2>
+    <p>Nesta frase temos um <b>termo em negrito</b> usando a tag "B" (não semântica).</p>
+    <!-- utilizando o <b> temos apenas a frase em negrito -->
+    <p>Nesta frase tenho um <strong>termo em destaque</strong> usando a tag "Strong" (semântica)</p> <!-- utilizando o <strong> além da forma em negrito ele da um sentido ao negrito, pode se utilizar 
+        ambas as tags sem probelma algum   -->
+    <h2><em>Itálico / Ênfase</em></h2>
+    <p>Nesta frase temos um termo em <i>itálico sublinhando</i> a frase,
+        usando as teclas (cltr + shift + p), selecionando o termo emmet:
+        Envelope com a abreviatura ou se não aparecer digite "abb" e digitando a letra "I"</p>
+    <p>Nesta frase temos um <em>termo em ênfase</em> usando a tag "EM" (semântica)</p>
+    <!-- Utilizar o "Strong" e o "Em", pois provavelmente o "i" e o "b não estão sendo mais utlizados por serem tags do HTML4" -->
+    <h2><em>Texto marcado</em></h2>
+    <p>Podemos criar também <mark>um texto marcado</mark> usando a tag "MARK".</p>
+    <!-- A cor da marcação nós definimos em CSS3 e não em HTML5. Colocando Style estamos utilizando o CSS3 -->
+    <p>E neste parágrafo temos <mark>outro texto marcado</mark> no final </p>
+    <h2><em>Texto grande e pequeno</em></h2>
+    <p>Estamos criando um <big>texto grande</big> e
+        um <small>texto pequeno</small> nesse parágrafo, porém
+        o "big" não e mais utilizado em HTML5"</p>
+    <h2><em>Texto deletado</em></h2>
+    <p>Podemos criar <del>um texto como excluído</del> para indicar
+        que ele dedve ser lido, mas não considerado usando a tag "del"</p>
+    <h2><em>Texto inserido</em></h2>
+    <p>Podemos marcar <ins>um texto como inserido</ins> para dar
+        uma ênfase e indicar que ele foi adicionado depois, usando a tag "ins".</p>
+    <h2>Texto sobreescrito</h2>
+    <p>Para inserir coisa do tipo x<sup>20</sup>+3, utilizando a tag "sup"</p>
+    <h2>Texto subescrito</h2>
+    <p>Para inserir coisas do tipo H<sub>2</sub>0, utilizando a tag "sub"</p>
+
+</body>
+
+</html>

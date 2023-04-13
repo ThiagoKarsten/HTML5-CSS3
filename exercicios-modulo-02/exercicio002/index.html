@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradiente CSS</title>
+
+    <!-- fazendo cores em degrade usando o background-image:linear-gradient(), temos que colocar a 
+    direção, no caso ali usamos "to right", logo apos a cores em degrade 
+    (podemos usar "to top" que é para cima "to left" que é para esquerda e "to bottom" que é para baixo)-->
+    <style>
+        * {
+            /* Configurações globais nas CSS */
+            height: 100%;
+        }
+
+        /* O background-attachment: fixed; serve para fixar o fundo da pagina*/
+        /* Podemos utilizar a cores em diagonal tambem usando o "deg", digitar o numero antes e depois deg, exemplo: 45deg */
+        /* Podemos o usar o backgorud-imge: radial-gradient, e digitar nele circle ele ele via fazer um degrade em circulo */
+        /* Colocando a porcentagem apos a cor voce define o quanto quer que ela ocupe na pagina */
+        body {
+            /*  background-image: radial-gradient(circle, #710EFF, #FF00BC, #FF0064, #FF5B00, #FFCE00  ); */
+            background-image: linear-gradient(-60deg, #710EFF 10%, #FF00BC, #FF0064, #FF5B00, #FFCE00);
+            background-attachment: fixed;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Testando Gradiente</h1>
+</body>
+
+</html>

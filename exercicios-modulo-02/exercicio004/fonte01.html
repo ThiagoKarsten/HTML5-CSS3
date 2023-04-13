@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            /* 
+            Medidas Absolutas (centimetro, milimetro, polegada, pixel (recomendada), ponto, paica(pc)) 
+            Medidas Relativas(em (altura m, recomendada), ex (altura x), rem, vw (largura da tela), vh (altura da vw))
+            */
+            /* 16pixels (px) geralmente é = 1em */
+            font-size: 1em;
+            /* font-weight: é o pesod a fonte no site */
+            font-weight: bolder;
+            /* Pesos literais: lighter (fonte mais leve), normal (fonte padrao), bold (Mais grossa), bolder (mais forte do que bold) */
+            /* Font style = estilo da fonte */
+            font-style: italic;
+            /* text-decoration = ltextos sublinhados */
+            /* text-decoration: underline; */
+
+        }
+        h1{
+            /* shorthand-font = dizer varias coisas em uma unica linha
+            Ordem a seguir -> font-style -> font-weight -> font-size -> font-family 
+
+            ao inves de usar isso aqui abaixo, posso usar a de cima seguindo a ordem
+            font-family: sans-serif;
+            font-weight: bolder;
+            font-size: 3em;
+            font-style: italic;
+
+            exemplo abaixo: 
+            */
+            font: italic bolder 3em sans-serif;
+        }
+        h2{
+            font: bold 2em sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1><em>Trabalhando com fontes</em></h1>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur commodi quos excepturi enim, ab natus sapiente dolorum alias reiciendis repellat quam nam, tenetur odio officiis magni quod ipsum sed perferendis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam iste sit perferendis? Corporis aliquam enim repudiandae error odio alias adipisci molestiae dolorum quod odit, iusto cupiditate molestias reprehenderit? Minus, magni. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error accusamus natus fugit adipisci dicta. Facilis optio consectetur pariatur, ipsam accusantium aperiam mollitia excepturi neque repellendus vel minus! Magnam, nesciunt quae.</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur velit sit nobis ratione ab, odit nostrum perspiciatis ad praesentium consectetur laborum dignissimos, quisquam necessitatibus quis doloribus sed, nesciunt eligendi fuga.</p>
+<h2><em>Subtitulo do exercício</em></h2>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda beatae at odit, ex nisi maxime rerum adipisci tempora consectetur ipsa non neque itaque inventore possimus vero suscipit libero fuga fugit.</p>
+</body>
+</html>

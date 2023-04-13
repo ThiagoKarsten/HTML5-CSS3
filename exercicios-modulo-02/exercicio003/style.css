@@ -1,0 +1,38 @@
+@charset "UTF-8";
+
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-image: linear-gradient(to right,#239DFA, #14C0E3, #17FDE6);
+}
+
+/* Aqui eu selecionei o main que eu havia botado no html. Width é a largura que o texto ocupa na pagina*/
+/* Padding serve para dar um espaçamento nas bordas e as letras nao ficarem grudadas */
+/* "Margin: auto" serve para centralizar o texto mesmo que voce aumente e diminua a pagina o texto sempre vai ficar no meio da pagina */
+/* "border-radius:" serve para deixar as pontas do main mais arredondadas*/
+/* "box-shadow: 10px 10px 10px black" serve para sombrear, no exemplo ali o primeiro é pro lado o segundo é para baixo e pixel de espalhamento na cor preta */
+main{
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 5px 5px 15px #171ffd8e;
+    width: 600px;
+    padding: 10px;
+    margin: auto;
+}
+
+h1{
+color: #1453E3;
+text-align: center;
+text-shadow: 1px 1px 2px #08246680;
+}
+
+h2{
+color: #239DFA;
+text-shadow: 1px 1px 2px #0b304d56;
+}
+
+p{
+    text-align: justify;
+}

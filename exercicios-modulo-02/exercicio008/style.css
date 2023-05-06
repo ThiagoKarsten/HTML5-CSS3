@@ -1,0 +1,38 @@
+@charset "UTF-8";
+
+body{
+    background-color: #a4e6be;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+h1{
+    color: #0B3D11;
+}
+/* Utilizamos essa nomenclatura para puxar um H1 exlcuisvo e personalizarmos somente ele
+Tudo em HTML que é "id" vira # em CSS */
+h1#principal{
+text-align: center;
+background-color: #007D32;
+color: white;
+}
+
+h2{
+    color: #018b28;
+}
+/* Tudo em HTML que é class em CSS é "." e quando usamos class nao colocamos H1,H2.. na frente*/
+.basico{
+    color: #24bb3d;
+    font-weight: bold;
+}
+
+.intermediario{
+color: #b2cf0d;
+}
+
+.avancado{
+color: rgb(170, 48, 0);
+}
+
+p{
+    text-align: justify;
+}

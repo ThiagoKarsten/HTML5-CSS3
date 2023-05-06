@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+
+    <style>
+        /* SELETORES PERSONALIZADOS
+        # = id
+        . = class
+        : = pseudo-classes
+        :: = pseudo-elements
+        > = children
+         */
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        a {
+            color: red;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        /* Visited quando o site ja for visitado ele ficara com a cor "darkred" */
+        a:visited {
+            color: darkred;
+        }
+
+        a:hover {
+            text-decoration: underline;
+            color: black;
+        }
+
+        /* Active quando eu clicar no link ele vai ficar amarelo */
+        a:active {
+            color: yellow;
+        }
+
+        a::before {
+            content: '❑ ';
+            color: darkgray;
+        }
+
+        /* Os dois ponto 2x seguido do after quer dizer que vamos colocar o conteudo depois de todos os "a" */
+        a::after {
+            content: ' ❑';
+            color: darkgray;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Personalizando Links</h1>
+    <ul>
+        <li><a href="https://github.com/ThiagoKarsten" target="_blank">Repositorio GitHub</a></li>
+        <li><a href="https://www.youtube.com/@thiagokarsten2540/videos" target="_blank">Canal do Youtube</a></li>
+        <li><a href="https://www.cursoemvideo.com" target="_blank">Site do CursoemVideo</a></li>
+    </ul>
+</body>
+
+</html>
